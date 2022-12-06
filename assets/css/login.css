@@ -1,0 +1,55 @@
+.modal-content{
+    height: 75%;
+    display: flex;
+    width: 100%;
+    flex-direction: inherit;    
+}
+#Close{
+    margin-left: 21%;
+    margin-top: -36%;
+    background: transparent;
+    border: none;
+}
+#left-block{
+    border-radius: 8px;
+    height: 100%;
+    background-color: blue;
+    width: 39%;
+    padding: 22px;
+    color: white;
+
+}
+#left-block img{
+    margin-top: 13rem;
+    margin-left: 10%;
+}
+#right-block{
+    padding: 18px;
+    display: inline-block;
+}
+#right-block form{
+    margin-top: auto;
+}
+.bar-style{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+.btn{
+    width: 100%;
+    margin: 5px;
+    background-color: #ff7a00;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+form a{
+    text-decoration: none;
+    color: blue;
+}

@@ -1,0 +1,56 @@
+#container{
+    background-color: rgb(16, 7, 34);
+    display: flex;
+    padding: 2rem;
+
+}
+.block{
+    display: block;
+}
+hr{
+    margin: 0;
+}
+.block a,small{
+    display: block;
+}
+.block a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.box{
+    width: 8rem;
+    margin: 1.2rem;
+    font-size: 0.8rem;
+}
+.box-1{
+    width: 14rem;
+    margin: 1.2rem;
+    font-size: 0.9rem;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#container-2{
+    background-color: rgb(16, 7, 34);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 4rem;
+    align-items: center;
+}
+#cards-div{
+    display: flex;
+    
+}
+#cards-div img{
+    width: 3rem;
+}
+#container-2 i{
+    color: rgb(173, 173, 42);
+    margin-right: 5px;
+}
+#container-2 span:hover{
+    cursor: pointer;
+}
