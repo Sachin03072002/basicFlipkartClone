@@ -4,20 +4,28 @@ module.exports.profile = function(req,res){
         title:'user_profile'
     });
 }
-//render the log in page
-module.exports.signUp=function(req,res){
-    res.render('log-in',{
-        title:"shop | Log-in"
-    });
-}
 //render the sign in page
 module.exports.signIn=function(req,res){
-   return res.render('sign-in',{
-    title:'Shop | Sign In'
-   });
+    if(req.isAuthenticated()){
+        return res.redirect('/users/profile');
+    }
+    return res.render('sign-in',{
+     title:'Flipkart | Sign Up'
+    });
+ }
+//render the log in page
+module.exports.signUp=function(req,res){
+    if(req.isAuthenticated()){
+        return res.redirect('/users/profile');
+    }
+    res.render('sign-up',{
+        title:"Flipkart | Log-in"
+    });
 }
+
 //get the sign up date
 module.exports.create=function(req,res){
+
     if(req.body.password !=req.body.confirmpassword){
         return res.redirect('back');
     }
@@ -32,7 +40,7 @@ module.exports.create=function(req,res){
                     console.log('error in creating user while signing up');
                     return;
                 }
-                return res.redirect('/users/log-in');
+                return res.redirect('/users/sign-in');
             })
         }else{
             return res.redirect('back');
@@ -40,5 +48,16 @@ module.exports.create=function(req,res){
     });
 }
 module.exports.createSession=function(req,res){
-    return res.redirct('/');
+    return res.redirect('/');
+}
+
+module.exports.destroySession=function(req,res){
+    req.logout(function(err){
+        if(err){
+            return next(err);
+        }
+        // req.flash('success','You have Logged out');
+        return res.redirect('/');
+    });
+
 }

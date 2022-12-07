@@ -1,18 +1,24 @@
 .modal-content{
-    height: 75%;
+    height: fit-content;
     display: flex;
-    width: 100%;
+    width: 110%;
     flex-direction: inherit;    
 }
-#Close{
-    margin-left: 21%;
-    margin-top: -36%;
+#Close-sign-in{
+    margin-left: 75%;
+    margin-top: -45%;
+    background: transparent;
+    border: none;
+}
+#Close-sign-up{
+    margin-left: 26%;
+    margin-top: -45%;
     background: transparent;
     border: none;
 }
 #left-block{
     border-radius: 8px;
-    height: 100%;
+    height: 90vh;
     background-color: blue;
     width: 39%;
     padding: 22px;
@@ -20,7 +26,7 @@
 
 }
 #left-block img{
-    margin-top: 13rem;
+    margin-top: 8rem;
     margin-left: 10%;
 }
 #right-block{
@@ -38,9 +44,9 @@
     margin-bottom: 1rem;
 
 }
-.btn{
+.classbtn{
     width: 100%;
-    margin: 5px;
+    margin: 3px;
     background-color: #ff7a00;
     border: none;
     border-radius: 5px;
@@ -51,5 +57,6 @@
 }
 form a{
     text-decoration: none;
+    margin: 2rem;
     color: blue;
 }
