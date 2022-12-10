@@ -1,0 +1,11 @@
+
+.post-comments-list{
+    /* border: 2px solid black; */
+    width: 14%;
+    display: grid;
+}
+.delete a{
+    color: black;
+    margin-left: 90%;
+    
+}
